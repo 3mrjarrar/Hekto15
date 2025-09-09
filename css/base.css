@@ -42,7 +42,7 @@ body{
     width: calc(100% - 320px);
     margin: auto;
 }
-.bar{
+ .bar{
 display: none;
 }
 
@@ -53,4 +53,19 @@ display: none;
     .bar{
         display: block;
     }
+}
+.d-flex{
+    display: flex;
+}
+.flex-dir{
+    flex-direction: column;
+}
+.gap-2{
+    gap: 10px;
+}
+.gap-45{
+    gap: 45px;
+}
+.gap-23{
+    gap: 23px;
 }

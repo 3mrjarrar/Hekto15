@@ -13,7 +13,7 @@
     color: var(--primary);
 }
 .search form{
-    border:1px solid var(--primary);
+    border:1px solid #E7E6EF;
 }
 .search input{
     border: none;
@@ -25,3 +25,34 @@
     background-color: var(--primary);
     padding: 8px 14px;
 }
+/* end header*/
+
+/* start footer */
+.footer{
+    background-color: #EEEFFB;
+    padding: 50px 0;
+}
+.left{
+    width: 30%;
+}
+.right{
+    width: 60%;
+}
+
+.footer .left{
+    gap: 35px;
+    align-items:flex-start ;
+}
+
+.footer a {
+    color: #8A8FB9;
+}
+.addressInfo{
+    color: #8A8FB9;
+}
+
+.footer .right .row {
+    align-items: flex-start;
+}
+
+/* end footer */
