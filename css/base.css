@@ -116,3 +116,9 @@ display: none;
 .color-3{
    background-color:#00009D ; 
 }
+.pos-rel{
+    position: relative;
+}
+.pos-abs{
+    position: absolute;
+}

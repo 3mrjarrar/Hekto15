@@ -40,6 +40,11 @@
         margin-bottom: 30px;
     }
 }
+.featured-products h2{
+    font-size: xx-large;
+    color: #151875;
+    font-family: 'Josefin Sans', sans-serif;
+}
 .featured-products .row{
     justify-content: flex-start;
     gap: 15px;
@@ -47,14 +52,7 @@
 .product{
     position: relative;
 }
-.sale-badge{
-    position: absolute;
-    top: 10px;
-    left: 5px;
-}
-.sale-badge img{
-    width: 100px;
-}
+
 .featured-products .product{
     /* width: calc( (100% - 45px)/4 ); */
     flex-grow: 1;
@@ -63,7 +61,7 @@
 }
 .featured-products .img{
     background-color: #F6F7FB;
-    padding: 5px;
+    padding: 15px;
     border-radius: 3px;
 }
 .product-details{
@@ -96,8 +94,199 @@
     width: 200px;
     height: 200px;
     object-fit: contain;
+    padding: 15px;
 }
+.product{
+    position: relative;
+}
+
+.hover-buttons{
+    position: absolute;
+    inset: 0;
+}
+.hover-buttons .icons{
+    position: absolute;
+    top: 12px;
+    left: 12px;         
+    display: flex;
+    gap: 16px;
+    padding: 11px;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    
+}
+.hover-buttons .icons,.hover-buttons .view,.hover-buttons .view button,.hover-buttons .icons button{
+    transition: all .6s;
+}
+
+
+.hover-buttons .icons button{
+    border: none;
+    outline: none;
+    background-color: #F6F7FB;
+}
+
+.hover-buttons .view{
+    position: absolute;
+    left: 37%;
+    bottom: 130px;
+    opacity: 0;
+    visibility: hidden;
+    
+}
+
+.hover-buttons .view button{
+    border: none;
+    outline: none;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #08D15F;
+    padding: 8px 13px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.product:hover .hover-buttons .icons,.product:hover .hover-buttons .view{
+    opacity: 1;
+    visibility: visible;
+}
+.product:hover .hover-buttons .icons button{
+    background-color: #F6F7FB;
+}
+
 /* end featured products */
+/* start leatest products */
+.leatest-products h2{
+    color: #151875;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.leatest-products .nav {
+    display: flex;
+  justify-content: center;   
+  align-items: center;     
+  width: 100%;            
+  gap: 60px;
+}
+.leatest-products{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    h2{
+        padding-bottom: 19px;
+    }
+    
+}
+.nav .active{
+    color: var(--primary);
+    text-decoration: underline;
+}
+.leatest-products h2{
+    font-size: xx-large;
+}
+.Lproducts .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 37px; 
+      text-align: center;
+       align-items:stretch;    
+       justify-content: flex-start;
+         row-gap: 120px; 
+    }
+
+    .leatest-products .Lproduct{
+        align-items: flex-start;
+    }
+    .Lproduct {
+      
+        flex: 0 0 calc(100%/3 - (37px * 2 / 3));
+      height: 306px; 
+       box-sizing: border-box;
+       position: relative;
+    }
+    .leatest-products .nav{
+        padding-bottom: 62px;
+    }
+.Lproduct .Lproduct-details{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 15px;
+}
+.Lproduct .Lproduct-details h3{
+    text-decoration: underline;
+    text-decoration-color: #EEEFFB;
+    text-decoration-thickness:2px;
+    text-underline-offset:7px;
+}
+.Lproduct .Lproduct-details h3 , .Lproduct .Lproduct-details .price .sale{
+    color: #151875;
+}
+.Lproduct .Lproduct-details .price .original{
+    color: red;
+    text-decoration: line-through;
+}
+.Lproduct .Limg {
+    height: 300px;
+    padding: 15px;
+    background-color: #F7F7F7;
+    align-items: flex-end;
+    transition: 0.6s;
+}
+
+.Lproduct:hover .Limg{
+    background-color: white;
+    
+}
+.Lproduct:hover .sale-badge {
+    visibility: visible;
+}
+.sale-badge{
+    position: absolute;
+    left: 18px;
+    top: 25px;
+    visibility: hidden;
+     opacity: 0;                
+  transition: opacity 0.6s;
+}
+.Lhover-buttons .Licons {
+    width: 40px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    
+    left: 15px;
+    top: 155px;
+    cursor: pointer;
+    visibility: hidden;
+    transition: all 0.6s;
+       opacity: 0;               
+  transition: opacity 0.6s;
+  
+}
+.Lhover-buttons .Licons button{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border: none;
+    outline: none;
+    transition: all 0.6s;
+     border-radius: 50%;
+     transition: background-color 0.2s;
+}
+.Lhover-buttons .Licons button:hover{
+  background-color: #f2f4ff;
+}
+.Lproduct:hover .Licons{
+    visibility: visible;
+    opacity: 1; 
+}
+.Lproduct:hover .sale-badge{
+visibility: visible;
+  opacity: 1;
+}
+.Lhover-buttons .Licons,.Lproduct:hover .sale-badge ,.Lhover-buttons .Licons button{
+    
+}
+/* end leatest products */
 /* start newslater */
 .newslater{
     background-image:url(../img/images/newslater/newslater.png) ;
@@ -172,3 +361,53 @@
 }
 
 /* end footer */
+
+/*start hero*/
+
+.hero {
+    background-color: #f2f0ff;
+    padding: 50px 0;
+}
+.hero-content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex:1 0 30%;
+    
+}
+.hero-content .hero-lamp{
+        position: relative;
+        bottom: 176px;
+        right: 38px;
+    }
+.hero-content .hero-lamp img{
+    width: 100%;
+}
+.hero-img{
+    flex:1 0 20%;
+    left: 156px;
+    position: relative;
+}
+.hero-img img {
+    width: 80%;   
+}
+.hero-content .hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: flex-start;
+    h1{
+        font-family: 'Josefin Sans';
+    }
+}
+.hero-content .hero-text .p1{
+    color: var(--primary);
+    font-weight: bold;
+    height: 28px;
+    font-size: large;
+}
+.hero-content .hero-text .p2{
+    color: #8A8FB9;
+}
+
+/*end hero*/
