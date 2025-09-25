@@ -159,6 +159,7 @@
 .leatest-products h2{
     color: #151875;
     font-family: 'Josefin Sans', sans-serif;
+    font-size: xx-large;
 }
 .leatest-products .nav {
     display: flex;
@@ -178,9 +179,6 @@
 .nav .active{
     color: var(--primary);
     text-decoration: underline;
-}
-.leatest-products h2{
-    font-size: xx-large;
 }
 .Lproducts .row {
       display: flex;
@@ -323,7 +321,78 @@ visibility: visible;
     }
 }
 /* end clients */
-
+/* start leatest blogs */
+.leatest-blog{
+    padding-top:50px ;
+    padding-bottom: 123px;
+}
+.leatest-blog h2{
+    color: #151875;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: xx-large;
+    padding-bottom: 80px;
+}
+.blog{
+    width: 370px;
+     box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+     border-radius: 7px;
+     
+}
+.blog-details{
+    display: flex;
+    flex-direction: row;
+    gap: 44px;
+    padding-left: 14px;
+    padding-bottom: 31px;
+}
+.blog .blog-img{
+    padding-bottom: 19px;
+}
+.blog .blog-img img{
+    border-radius: 9px;
+    box-shadow: 0 6px 6px rgba(0,0,0,.25);
+}
+.blog-date{
+    p{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: small;
+    }
+   display: flex;
+   gap: 4px;
+}
+.blog .top{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #151875;
+    font-size: large;
+    padding-left: 14px;
+    padding-bottom: 17px;
+    transition: 0.6s;
+}
+.blog-discribtion{
+    color:#72718F ;
+    padding-left: 14px;
+    padding-bottom: 17px;
+     line-height: 30px;
+}
+.blog .read{
+    color: #151875;
+    text-decoration: underline;
+    text-underline-offset:4px;
+    padding-left: 14px;
+    padding-bottom: 35px;
+}
+.blog .read a{
+    transition: 0.6s;
+}
+.blog:hover .top{
+    color: var(--primary);
+   
+}
+.blog:hover .read a{
+color: var(--primary);
+text-decoration-color:var(--primary) ;
+}
+/* end leatest blogs */
 /* start footer */
 .footer {
     background-color: #EEEFFB;
