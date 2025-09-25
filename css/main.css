@@ -330,12 +330,54 @@ visibility: visible;
 }
 
 /* end leatest products */
+/* start shopex offers */
+.shopex-offers{
+    padding-bottom: 135px;
+}
+.shopex-offers h2{
+     color: #151875;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: xx-large;
+     padding-bottom: 39px;
+}
+.offers{
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap; 
+}
+.offer{
+    height: 320px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.10);
+    flex: 1 1 0; 
+    overflow: hidden; 
+    min-height: 0; 
+    min-width: 220px;
+}
+.offer h3{
+     color: #151875;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-bottom: 20px;
+}
+.offer .Oimg{
+    text-align: center;
+    padding-top: 65px;
+    padding-bottom: 27px;
+}
+.offer .offer-discribtion{
+    color: #8A8FB9;
+    line-height: 2;
+}
+
+/* end shopex offers */
 /* start trending products */
 .trending-products h2{
     color: #151875;
     font-family: 'Josefin Sans', sans-serif;
     font-size: xx-large;
-    padding-bottom: 39px;
+    padding-bottom: 55px;
 }
 .Tproducts {
   display: flex;
@@ -380,6 +422,8 @@ visibility: visible;
 .Tproduct-price .old-price{
     color: #8A8FB9;
     font-family: 'Josefin Sans', sans-serif;
+    text-decoration: line-through;
+    font-size: small
 }
 .Tproduct .Timg{
     background-color: #F5F6F8;
