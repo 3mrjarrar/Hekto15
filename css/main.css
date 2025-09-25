@@ -33,6 +33,55 @@
 }
 
 /* end header*/
+/*start hero*/
+
+.hero {
+    background-color: #f2f0ff;
+    padding: 50px 0;
+}
+.hero-content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex:1 0 30%;
+    
+}
+.hero-content .hero-lamp{
+        position: relative;
+        bottom: 176px;
+        right: 38px;
+    }
+.hero-content .hero-lamp img{
+    width: 100%;
+}
+.hero-img{
+    flex:1 0 20%;
+    left: 156px;
+    position: relative;
+}
+.hero-img img {
+    width: 80%;   
+}
+.hero-content .hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: flex-start;
+    h1{
+        font-family: 'Josefin Sans';
+    }
+}
+.hero-content .hero-text .p1{
+    color: var(--primary);
+    font-weight: bold;
+    height: 28px;
+    font-size: large;
+}
+.hero-content .hero-text .p2{
+    color: #8A8FB9;
+}
+
+/*end hero*/
 /* start featured products */
 .featured-products {
     padding: 50px 0;
@@ -250,7 +299,6 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    
     left: 15px;
     top: 155px;
     cursor: pointer;
@@ -258,7 +306,6 @@
     transition: all 0.6s;
        opacity: 0;               
   transition: opacity 0.6s;
-  
 }
 .Lhover-buttons .Licons button{
     height: 40px;
@@ -281,10 +328,74 @@
 visibility: visible;
   opacity: 1;
 }
-.Lhover-buttons .Licons,.Lproduct:hover .sale-badge ,.Lhover-buttons .Licons button{
+
+/* end leatest products */
+/* start trending products */
+.trending-products h2{
+    color: #151875;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: xx-large;
+    padding-bottom: 39px;
+}
+.Tproducts {
+  display: flex;
+  gap: 29px;
+  flex-wrap: wrap; 
+  align-items: flex-end;
+}
+
+.Tproducts  .Tproduct {
+  flex: 1 1 0;     
+  min-width: 0;    
+  box-shadow: 0 8px 24px rgba(0,0,0,0.10);
+  padding-top: 4px;
+  padding-bottom: 32px;
+  margin-bottom: 50px;
+  min-width: 240px;   
+  min-height: 0;       
+  box-sizing: border-box;
+  overflow: hidden; 
+}
+.Tproduct h3{
+    color: #151875;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.Tproduct-price{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.Tproducts .Timg{
+   text-align: center;
+}
+.Tproduct-name{
+    padding-top: 11px;
+    padding-bottom: 8px;
+}
+.Tproduct-price .new-price{
+    color: #151875;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.Tproduct-price .old-price{
+    color: #8A8FB9;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.Tproduct .Timg{
+    background-color: #F5F6F8;
+    margin: 12px;
+     height: 260px;       
     
 }
-/* end leatest products */
+.Tproduct .Timg img{
+    padding: 41px;
+    object-fit: cover;
+    
+}
+.Tproduct:hover .Tproduct-name h3{
+    color: var(--primary);
+}
+/* end trending products */
 /* start newslater */
 .newslater{
     background-image:url(../img/images/newslater/newslater.png) ;
@@ -429,54 +540,6 @@ text-decoration-color:var(--primary) ;
     align-items: flex-start;
 }
 
+
 /* end footer */
 
-/*start hero*/
-
-.hero {
-    background-color: #f2f0ff;
-    padding: 50px 0;
-}
-.hero-content {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    flex:1 0 30%;
-    
-}
-.hero-content .hero-lamp{
-        position: relative;
-        bottom: 176px;
-        right: 38px;
-    }
-.hero-content .hero-lamp img{
-    width: 100%;
-}
-.hero-img{
-    flex:1 0 20%;
-    left: 156px;
-    position: relative;
-}
-.hero-img img {
-    width: 80%;   
-}
-.hero-content .hero-text{
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    align-items: flex-start;
-    h1{
-        font-family: 'Josefin Sans';
-    }
-}
-.hero-content .hero-text .p1{
-    color: var(--primary);
-    font-weight: bold;
-    height: 28px;
-    font-size: large;
-}
-.hero-content .hero-text .p2{
-    color: #8A8FB9;
-}
-
-/*end hero*/
