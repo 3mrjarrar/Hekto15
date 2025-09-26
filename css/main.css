@@ -38,25 +38,27 @@
 .hero {
     background-color: #f2f0ff;
     padding: 50px 0;
+    display: flex;
 }
 .hero-content {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    flex:1 0 30%;
+    flex: 1 1 40%; 
     
 }
 .hero-content .hero-lamp{
         position: relative;
-        bottom: 176px;
+        bottom: 86px;
         right: 38px;
     }
 .hero-content .hero-lamp img{
     width: 100%;
 }
 .hero-img{
-    flex:1 0 20%;
-    left: 156px;
+    flex: 0 1 auto;
+     max-width: 35%;
+    
     position: relative;
 }
 .hero-img img {
@@ -69,6 +71,7 @@
     align-items: flex-start;
     h1{
         font-family: 'Josefin Sans';
+        width: 400px;
     }
 }
 .hero-content .hero-text .p1{
